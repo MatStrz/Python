@@ -1,0 +1,13 @@
+import requests
+import json
+import pprint
+
+r = requests.get("LINK")
+
+
+try:
+    website = r.json()
+except json.decoder.JSONDecodeError:
+    print("Niepoprawny format")
+else:
+    pprint.pprint(website)
