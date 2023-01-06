@@ -1,21 +1,8 @@
 import requests
 import json
 import pprint
-"""
+import webbrowser
 
-API - Application Programming Interface
-
-Inter - pmiędzy
-face - twarz
-
-bankomat
-
-minimalnie 15 punktów
-posegregowana malejąca
-z ostatniego tygodnia
-kategorii python
-
-"""
 
 params = {
     "site" : "stackoverflow",
@@ -35,11 +22,4 @@ try:
 except json.decoder.JSONDecodeError:
     print("Niepoprawny format")
 else:
-    pprint.pprint(questions)
-
- 
-
-
-
-    
-
+    webbrowser.open(questions)
