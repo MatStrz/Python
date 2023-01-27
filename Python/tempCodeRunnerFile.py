@@ -1,0 +1,1 @@
+dczas konstrukcji obiektu')
