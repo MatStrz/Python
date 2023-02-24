@@ -1,10 +1,9 @@
-from BankAccountClass import BankAccount
+from BankAccountClass import MinimumBalanceAccount
 
-konto = BankAccount(1000)
-print(konto.balance)
 
-konto.deposit(500)
-print(konto)
+kontoMinimum = MinimumBalanceAccount(1000)
 
-konto.withdraw(400)
-print(konto)
+kontoMinimum.deposit(500)
+result = kontoMinimum.try_withdraw(900)
+
+print(result.message, result.amount)
