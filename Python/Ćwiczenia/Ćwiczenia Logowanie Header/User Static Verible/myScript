@@ -1,7 +1,0 @@
-from User import User
-
-a = User("Arkadiusz")
-b = User("wiola")
-c = User("Tomasz")
-
-print(a.id, b.id, c.id,)
